@@ -41,7 +41,7 @@
 
 
 
-    // echo '<pre>'; var_dump($_POST); echo '</pre>';
+    echo '<pre>'; var_dump($_POST); echo '</pre>';
  
     for($i=0;$i<=100;$i++)
     {
@@ -51,22 +51,22 @@
     ?>
     <form method="post" action="affichage_exercice2.php" enctype="multipart/form-data">
 
-        <h1>Formulaire membre</h1>
+        <h1>Formulaire </h1>
         <label for="nom">Nom</label>
-        <input type="nom" name="nom" id="nom">
+        <input type="text" name="nom" id="nom">
         <br>
         <label for="prenom">Prenom</label>
-        <input type="prenom" name="prenom" id="prenom">
+        <input type="text" name="prenom" id="prenom">
 
         <label for="adresse">Adresse</label>
         <textarea name="adresse" id="adresse"></textarea>
         <hr>
         
         <label for="ville">ville</label>
-        <input type="ville" name="ville" id="ville">
+        <input type="text" name="ville" id="ville">
         <hr>
         <label for="cp">Code postal</label>
-        <input type="cp" name="cp" id="cp">
+        <input type="text" name="cp" id="cp">
         <hr>
         <label for="description">Description</label>
         <textarea class="form-control" name="description" rows="10"></textarea>
