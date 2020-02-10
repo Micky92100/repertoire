@@ -39,9 +39,9 @@
     <?php
 
 
-//    echo '<pre>';
-//    var_dump($_POST);
-//    echo '</pre>';
+    //    echo '<pre>';
+    //    var_dump($_POST);
+    //    echo '</pre>';
 
     for ($i = 0; $i <= 100; $i++) {
 
@@ -64,7 +64,7 @@
         <label for="job">Profession</label>
         <input type="text" name="job" id="job">
 
-        <label for="ville">ville</label>
+        <label for="ville">Ville</label>
         <input type="text" name="ville" id="ville">
 
         <label for="cp">Code postal</label>
@@ -77,10 +77,12 @@
         <input type="date" name="bd" id="bd">
 
         <p>Sexe</p>
-        <label for="male">homme:</label>
-        <input type="radio" id="male" name="sexe" value="m">
-        <label for="female">femme:</label>
-        <input type="radio" id="female" name="sexe" value="f">
+        <div style="display: flex;">
+            <label for="male">homme:</label>
+            <input type="radio" id="male" name="sexe" value="m">
+            <label for="female">femme:</label>
+            <input type="radio" id="female" name="sexe" value="f">
+        </div>
 
         <label for="description">Description</label>
         <textarea class="form-control" id="description" name="description" rows="10"></textarea>
