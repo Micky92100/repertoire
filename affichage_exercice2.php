@@ -22,7 +22,7 @@ if(isset($_POST['pseudo']) && isset($_POST['email'])) {
 	echo '<b>Taille pseudo : </b>' . $taille_pseudo . '<hr>';
 	
 	// if(iconv_strlen($pseudo) < 4 || iconv_strlen($pseudo) > 14)
-	if($taille_pseudo < 3 || $taille_pseudo > 10) {
+	if($taille_pseudo < 3 || $taille_pseudo > 15) {
 		echo '<div style="color: white; background-color: red; padding: 20px;">Attention, <br>Le pseudo doit avoir entre 4 et 14 caractères inclus.<br>Veuillez recommencer</div>';
 		
 		// cas d'erreur
