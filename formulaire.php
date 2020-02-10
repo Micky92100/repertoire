@@ -35,46 +35,58 @@
 <body>
 
 
-
-    <div class="conteneur"></div>
+<div class="conteneur">
     <?php
 
 
+//    echo '<pre>';
+//    var_dump($_POST);
+//    echo '</pre>';
 
-    echo '<pre>'; var_dump($_POST); echo '</pre>';
- 
-    for($i=0;$i<=100;$i++)
-    {
-        
+    for ($i = 0; $i <= 100; $i++) {
+
     }
-    
+
     ?>
     <form method="post" action="affichage_exercice2.php" enctype="multipart/form-data">
 
         <h1>Formulaire </h1>
-        <label for="nom">Nom</label>
-        <input type="text" name="nom" id="nom">
-        <br>
-        <label for="prenom">Prenom</label>
-        <input type="text" name="prenom" id="prenom">
+
+        <label for="nom">Nom*</label>
+        <input type="text" name="nom" id="nom" required>
+
+        <label for="prenom">Prenom*</label>
+        <input type="text" name="prenom" id="prenom" required>
+
+        <label for="phone">Telephone*</label>
+        <input type="text" name="phone" id="phone" required>
+
+        <label for="job">Profession</label>
+        <input type="text" name="job" id="job">
+
+        <label for="ville">ville</label>
+        <input type="text" name="ville" id="ville">
+
+        <label for="cp">Code postal</label>
+        <input type="text" name="cp" id="cp">
 
         <label for="adresse">Adresse</label>
         <textarea name="adresse" id="adresse"></textarea>
-        <hr>
-        
-        <label for="ville">ville</label>
-        <input type="text" name="ville" id="ville">
-        <hr>
-        <label for="cp">Code postal</label>
-        <input type="text" name="cp" id="cp">
-        <hr>
+
+        <label for="bd">Date de naissance</label>
+        <input type="date" name="bd" id="bd">
+
+        <p>Sexe</p>
+        <label for="male">homme:</label>
+        <input type="radio" id="male" name="sexe" value="m">
+        <label for="female">femme:</label>
+        <input type="radio" id="female" name="sexe" value="f">
+
         <label for="description">Description</label>
-        <textarea class="form-control" name="description" rows="10"></textarea>
-        <hr>
+        <textarea class="form-control" id="description" name="description" rows="10"></textarea>
+
         <input type="submit" id="confirm" value="Confirmer">
     </form>
-
-    </div>
+</div>
 </body>
-
 </html>
